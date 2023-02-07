@@ -1,0 +1,24 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "name": "json-server",
+      "email": "typicode"
+    },
+    {
+      "id": 2,
+      "name": "maya",
+      "email": "ty@picode.com"
+    },
+    {
+      "name": "ido",
+      "email": "ido@gmail.com",
+      "id": 3
+    },
+    {
+      "name": "ido",
+      "email": "ido@gmail.com",
+      "id": 4
+    }
+  ]
+}

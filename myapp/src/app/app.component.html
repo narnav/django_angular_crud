@@ -1,0 +1,21 @@
+<div>
+  <a [routerLink]="['/home']">home</a>&nbsp;
+  <a [routerLink]="['/about']">about</a>&nbsp;
+  <a [routerLink]="['/contatc']">contact</a>&nbsp;
+</div>
+<button (click)="test()">test - login</button>
+
+<router-outlet></router-outlet>
+<app-login></app-login>
+<button (click)="addStudent()">add Student</button>
+
+<!-- {{ ar | json }} -->
+<div *ngFor="let stud of ar; let i = index; let odd = odd">
+  <span [ngStyle]="{ background: odd ? 'lightblue' : 'white' }">
+    {{ i + 1 }} Name: {{ stud.sName }} Email: {{ stud.age }} {{ odd }}
+  </span>
+  <button (click)="displayInfo(stud.sName, +'7')">info</button>
+</div>
+<button (click)="getAll()">Get all students</button>
+<div *ngIf="title.length > 3">Content to render when condition is true.</div>
+{{ loginServ.access.length }}
